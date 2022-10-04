@@ -37,3 +37,96 @@
                 .orElseThrow(() -> new IllegalArgumentException("올바른 사칙연산이 아닙니다"));
     }
 ```
+
+# 파일 구성
+```aidl
+ 
+.
+├── README.md
+├── build
+│   ├── classes
+│   │   └── java
+│   │       ├── main
+│   │       │   └── org
+│   │       │       └── example
+│   │       │           ├── AdditionOperator.class
+│   │       │           ├── ArithmeticOperator$1.class
+│   │       │           ├── ArithmeticOperator$2.class
+│   │       │           ├── ArithmeticOperator$3.class
+│   │       │           ├── ArithmeticOperator$4.class
+│   │       │           ├── ArithmeticOperator.class
+│   │       │           ├── Calculator.class
+│   │       │           ├── DivitionOperator.class
+│   │       │           ├── MultiplyOperator.class
+│   │       │           ├── NewArithmeticOperator.class
+│   │       │           └── SubtractionOperator.class
+│   │       └── test
+│   │           └── org
+│   │               └── example
+│   │                   └── CalculatorTest.class
+│   ├── generated
+│   │   └── sources
+│   │       ├── annotationProcessor
+│   │       │   └── java
+│   │       │       ├── main
+│   │       │       └── test
+│   │       └── headers
+│   │           └── java
+│   │               ├── main
+│   │               └── test
+│   ├── reports
+│   │   └── tests
+│   │       └── test
+│   │           ├── classes
+│   │           │   └── org.example.CalculatorTest.html
+│   │           ├── css
+│   │           │   ├── base-style.css
+│   │           │   └── style.css
+│   │           ├── index.html
+│   │           ├── js
+│   │           │   └── report.js
+│   │           └── packages
+│   │               └── org.example.html
+│   ├── test-results
+│   │   └── test
+│   │       ├── TEST-org.example.CalculatorTest.xml
+│   │       └── binary
+│   │           ├── output.bin
+│   │           ├── output.bin.idx
+│   │           └── results.bin
+│   └── tmp
+│       ├── compileJava
+│       │   └── previous-compilation-data.bin
+│       ├── compileTestJava
+│       │   └── previous-compilation-data.bin
+│       └── test
+├── build.gradle
+├── gradle
+│   └── wrapper
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+├── gradlew
+├── gradlew.bat
+├── settings.gradle
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── org
+    │   │       └── example
+    │   │           ├── AdditionOperator.java
+    │   │           ├── ArithmeticOperator.java
+    │   │           ├── Calculator.java
+    │   │           ├── DivitionOperator.java
+    │   │           ├── MultiplyOperator.java
+    │   │           ├── NewArithmeticOperator.java
+    │   │           └── SubtractionOperator.java
+    │   └── resources
+    └── test
+        ├── java
+        │   └── org
+        │       └── example
+        │           └── CalculatorTest.java
+        └── resources
+
+
+```
